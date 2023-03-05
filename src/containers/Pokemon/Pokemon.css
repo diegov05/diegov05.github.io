@@ -1,0 +1,25 @@
+.app__wrapper-pokemon {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.app__wrapper-pokemon_selectbar select {
+    background-color: #414141;
+    border: 0;
+    color: #fff;
+    padding: .5rem 1rem;
+    margin-top: 2rem;
+}
+
+.app__wrapper-pokemon_selectbar select::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .app__wrapper-pokemon {
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+    }
+}

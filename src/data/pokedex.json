@@ -5,7 +5,7 @@
             "id": 1,
             "num": "001",
             "name": "Bulbasaur",
-            "img": "https://www.serebii.net/pokemon/art/001.png",
+            "img": "https://www.pokencyclopedia.info/sprites/gen5/ani_black-white/ani_bw_001.gif",
             "type": [
                 "Grass",
                 "Poison"

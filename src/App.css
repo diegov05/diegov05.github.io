@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+.section__padding {
+  padding: 4rem 6rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: var(--bg-base);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.app__wrapper-content {
+  width: 100%;
+  height: 633px;
+  margin: 0 2rem;
+  background: rgba(31, 31, 31, .95);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.type__button {
+  width: 151px;
+  height: 44.95px;
+  border-radius: 58px;
+  border: 0;
+  font-family: var(--font-base);
+  text-transform: uppercase;
+  font-weight: var(--weighted-text);
+  color: #fff;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.type__button:hover {
+  opacity: .9;
+}
+
+.headtext {
+  font-family: var(--font-base);
+  font-weight: var(--weighted-text);
+  color: #fff;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-family: var(--font-base);
+  font-weight: var(--weighted-text);
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: row;
+  gap: .3rem;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: var(--font-base);
+  font-weight: var(--regular-text);
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+
+
+.paragraph span img {
+  width: 31px;
+}
+
+@media screen and (max-width: 1620px) {
+  .subtitle {
+    font-size: 18px;
+    line-height: 18px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .paragraph {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .app__wrapper-content {
+    height: 977px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .app__wrapper-content {
+    width: 836px;
   }
 }

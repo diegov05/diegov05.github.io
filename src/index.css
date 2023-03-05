@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+/* Variables Definition */
+
+:root {
+  --bg-base: url("./assets/background.png");
+  --font-base: 'Inter', sans-serif;
+  --regular-text: 400;
+  --weighted-text: 800;
+
+  /* PKMN Types Colors */
+
+  --fire-type-color: #ec0606;
+  --grass-type-color: #0fc100;
+  --flying-type-color: #9a9a9a;
+  --poison-type-color: #c100ba;
+  --bug-type-color: #8AB62E;
+  --dragon-type-color: #5900eb;
+  ;
+  --rock-type-color: #975E3E;
+  --ground-type-color: #703E19;
+  --normal-type-color: #717171;
+  --electric-type-color: #FFF500;
+  --ice-type-color: #91FCFC;
+  --fighting-type-color: #A32A2A;
+  --psychic-type-color: #FF00D6;
+  --ghost-type-color: #420369;
+  --water-type-color: #0038FF;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
 }
